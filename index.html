@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initialp-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="s.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>Pricing Landing PAGE</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Plans & Pricing</h1>
+            <p>All plans start with 14 day free trial, no credit card required</p>
+            <div class="btn-wrap">
+                <h3>Monthly Plans</h3>
+                <label class="switch">
+                    <input type="checkbox" id="switch-id">
+                    <span class="slider round"></span>
+                </label>
+                <h3>Annually Plans</h3>
+            </div>
+            <div class="content">
+                <div class="monthly">
+                    <div class="pricing-table">
+                        <div class="ribbon">Sale</div>
+                        <h3>Standard</h3>
+                        <ul>
+                            <li>60-day chat history</li>
+                            <li>Ticketing system</li>
+                            <li>Data security</li>
+                            <li>Basic reporting</li>
+                        </ul>
+                        <div class="price"><span>$25</span>/ month</div>
+                        <a href="#">Get Started</a>
+                    </div>
+
+                    <div class="pricing-table">
+                        <div class="ribbon">Sale</div>
+                        <h3>Premium</h3>
+                        <ul>
+                            <li>Everything inluded in standard</li>
+                            <li>Agent groups</li>
+                            <li>Multiple brandings</li>
+                            <li>Basic widget customization</li>
+                        </ul>
+                        <div class="price"><span>$30</span>/ month</div>
+                        <a href="#">Get Started</a>
+                    </div>
+
+                    <div class="pricing-table">
+                        <div class="ribbon">Sale</div>
+                        <h3>Ultimate</h3>
+                        <ul>
+                            <li>Everything inluded in premium</li>
+                            <li>Dedicated account manager</li>
+                            <li>Staffing prediction</li>
+                            <li>Work scheduler</li>
+                        </ul>
+                        <div class="price"><span>$90</span>/ month</div>
+                        <a href="#">Get Started</a>
+                    </div>
+
+
+                </div>
+                <div class="annually">
+                    <div class="pricing-table">
+                        <div class="ribbon">Sale</div>
+                        <h3>Standard</h3>
+                        <ul>
+                            <li>60-day chat history</li>
+                            <li>Ticketing system</li>
+                            <li>Data security</li>
+                            <li>Basic reporting</li>
+                        </ul>
+                        <div class="price"><span>$50</span>/ month</div>
+                        <a href="#">Get Started</a>
+                    </div>
+
+                    <div class="pricing-table">
+                        <div class="ribbon">Sale</div>
+                        <h3>Premium</h3>
+                        <ul>
+                            <li>Everything inluded in standard</li>
+                            <li>Agent groups</li>
+                            <li>Multiple brandings</li>
+                            <li>Basic widget customization</li> 
+                        </ul>
+                        <div class="price"><span>$60</span>/ month</div>
+                        <a href="#">Get Started</a>
+                    </div>
+
+                    <div class="pricing-table">
+                        <div class="ribbon">Sale</div>
+                        <h3>Ultimate</h3>
+                        <ul>
+                            <li>Everything inluded in premium</li>
+                            <li>Dedicated account manager</li>
+                            <li>Staffing prediction</li>
+                            <li>Work scheduler</li>
+                        </ul>
+                        <div class="price"><span>$180</span>/ month</div>
+                        <a href="#">Get Started</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <script>
+            $("#switch-id").change(function()
+            {
+                if($(this).is(":checked")){
+                    $(".annually").show();
+                    $(".monthly").hide();
+                }
+                else{
+                    $(".annually").hide();
+                    $(".monthly").show();   
+                }
+            });
+        </script>
+
+    </body>
+</html>
